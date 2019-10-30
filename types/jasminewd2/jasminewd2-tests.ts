@@ -115,6 +115,8 @@ describe('jasminewd', () => {
       expect(errorPromise).toThrowError(expectedPromiseString);
       expect(errorPromise).toThrowError(expectedPromiseRegExp);
       expect(errorPromise).toThrowError(expectedString);
+      expect(expectedAny).toBeTrue();
+      expect(expectedAny).toBeFalse();
     });
   });
 

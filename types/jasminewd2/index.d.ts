@@ -2,6 +2,7 @@
 // Project: https://github.com/angular/jasminewd
 // Definitions by: Sammy Jelin <https://github.com/sjelin>
 //                 George Kalpakas <https://github.com/gkalpak>
+//                 Hamza Alimoussa <https://https://github.com/Alimoussa-Hamza>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 
@@ -38,6 +39,8 @@ declare namespace jasmine {
     toThrow(expected?: any): Promise<void>;
     toThrowError(message?: string | RegExp | Promise<string | RegExp>): Promise<void>;
     toThrowError(expected?: new (...args: any[]) => Error | Promise<new (...args: any[]) => Error>, message?: string | RegExp | Promise<string | RegExp>): Promise<void>;
+    toBeTrue(expectationFailOutput?: any): Promise<void>;
+    toBeFalse(expectationFailOutput?: any): Promise<void>;
   }
 
   interface ArrayLikeMatchers<T> extends Matchers<ArrayLike<T>> {
